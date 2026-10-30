@@ -38,8 +38,20 @@ Türkiye · Expected Graduation: June 2027
 
 ## Academic Achievements
 
-- **IB Diploma Predicted Score:** **43 / 45** (41/42 Subjects + 2 Core Points, Triple 7 in HL)
-- **Oxford Royale Summer Schools Engineering (Civil, Mechanical, Electrical):** Certificate, Achievement Award & Report Card with an overall grade of A (86%)
+- **IB Diploma Predicted Score:** **43 / 45** (41/42 Subjects + 2 Core Points, Triple 7 in HL: Math AA HL 7, Physics HL 7, Chemistry HL 7)
+- **Oxford Royale Summer Schools Engineering (Civil, Mechanical & Electrical):**
+  - Location: Campus of Balliol College, University of Oxford, United Kingdom
+  - Overall Grade: **A (84/100)**
+  - Detailed Evaluation Scores: Attendance & Punctuality: **10/10**, Written Assignment: **23/25**, In-class Contribution & Effort: **19/20**, Progress: **9/10**, Project Assignment: **23/35**
+  - Honors & Awards Received:
+    - **Certificate of Completion** (Balliol College, University of Oxford campus)
+    - **Academic Achievement Award** (in recognition of progress made during the academic course)
+    - **Certificate of Recognition** (for excellent engagement and performance in lessons)
+    - **Faculty Student Report & Written Evaluation** (by Teacher Mamoona Najeeb): Commended for deep conceptual understanding of engineering disciplines, critical questioning, advanced research and writing on future engineering technologies, and confident delivery in the collaborative group engineering presentation.
+- **PASCH Goethe-Institut German Literature Competition & Scholarship Award (*Urkunde*):**
+  - Organization: PASCH (*Schulen: Partner der Zukunft*) / Goethe-Institut Ankara & Austrian Author Urs Luger (Vienna / Ankara, April 2024)
+  - Honor: First Prize / Scholarship Winner (*Stipendium*) for the reading and writing competition *"Mein neues Leben"*
+  - Award: Full scholarship for a **3-week youth language and cultural immersion course in Germany** (*3-wöchiger Jugendkurs in Deutschland*, Goslar)
 
 ---
 
@@ -80,8 +92,9 @@ Türkiye · Expected Graduation: June 2027
 
 ## Languages
 
-- **Turkish**
-- **English**
+- **Turkish:** Native Language (Turkish A: Literature SL — 7)
+- **English:** Bilingual Academic Proficiency (English A: Language & Literature SL, all Higher Level STEM subjects studied in English)
+- **German:** Intermediate Academic Proficiency (PASCH / Goethe-Institut "Schulen: Partner der Zukunft" Literature Competition Scholarship Winner for a 3-week immersion course in Germany)
 
 ---
 

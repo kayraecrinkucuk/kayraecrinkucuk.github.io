@@ -142,8 +142,9 @@
                 <button type="button" class="filter-btn active" data-filter="all">All Initiatives</button>
                 <button type="button" class="filter-btn" data-filter="engineering">Engineering & Research</button>
                 <button type="button" class="filter-btn" data-filter="leadership">Leadership & MUN</button>
-                <button type="button" class="filter-btn" data-filter="arts">Arts & Media</button>
+                <button type="button" class="filter-btn" data-filter="arts">Arts, Media & Literature</button>
                 <button type="button" class="filter-btn" data-filter="athletics">Athletics</button>
+                <button type="button" class="filter-btn" data-filter="credentials">Official Credentials</button>
             </div>
 
             <!-- Featured Highlight Project Hero Card 1: Mechanical Engineering Research -->
@@ -218,48 +219,151 @@
                         </div>
                         <div>
                             <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                                <span class="tag-badge">Featured · International Engineering Award</span>
-                                <span class="tag-badge-muted">Oxford, United Kingdom</span>
+                                <span class="tag-badge">Featured · International Engineering Practicum</span>
+                                <span class="tag-badge-muted">Balliol College, University of Oxford, UK</span>
                             </div>
 
                             <h2 class="featured-project-title">
                                 <span>Oxford Royale Summer Schools Engineering Program</span>
                                 <span class="featured-link-sub">
-                                    <span>Grade A Distinction (86%)</span>
+                                    <span>Civil, Mechanical & Electrical · Overall Grade A (84/100)</span>
                                 </span>
                             </h2>
 
                             <p class="hero-desc" style="margin-top: 0.75rem; max-width: 100%; font-size: 0.95rem;">
-                                Completed an intensive engineering curriculum spanning Civil, Mechanical, and Electrical Engineering. Engaged in structural mechanics, thermodynamic cycles, fluid dynamics problem solving, and electrical circuit architecture, culminating in the prestigious Achievement Award and a final grade of A (86%).
+                                Completed an intensive engineering curriculum spanning Civil, Mechanical, and Electrical Engineering on the historic campus of <strong>Balliol College, University of Oxford</strong>. Engaged in structural mechanics, thermodynamic cycles, fluid dynamics problem solving, and electrical circuit architecture. Honored with three distinct credentials: the <strong>Certificate of Completion</strong>, the <strong>Academic Achievement Award</strong> (for academic progress), and the <strong>Certificate of Recognition</strong> (for classroom engagement).
                             </p>
+
+                            <div style="margin-top: 0.85rem; padding: 0.85rem 1.15rem; background: rgba(192, 132, 252, 0.08); border-left: 3px solid #c084fc; border-radius: var(--radius-md); font-size: 0.875rem; color: var(--foreground); line-height: 1.55;">
+                                <strong>Instructor Commendation (Teacher Mamoona Najeeb):</strong>
+                                <em>"Kayra regularly asks thoughtful and critical questions, demonstrating that she engages deeply with the topics covered and has a strong understanding of the engineering concepts... She also has excellent writing skills, as clearly demonstrated in her work on future engineering technologies... confident delivery of her section of the group presentation."</em>
+                            </div>
 
                             <div class="featured-stats-row">
                                 <div class="stat-item">
                                     <span class="stat-number" style="font-size: 1.85rem;"><span
-                                            class="text-gradient">86%</span></span>
+                                            class="text-gradient">84%</span></span>
                                     <span class="stat-label">Overall Grade A</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-number" style="font-size: 1.85rem;"><span
-                                            class="text-gradient">Triple Discipline</span></span>
-                                    <span class="stat-label">Mech, Civil & Elec</span>
+                                            class="text-gradient">10/10</span></span>
+                                    <span class="stat-label">Attendance & Punctuality</span>
                                 </div>
                                 <div class="stat-item">
                                     <span class="stat-number" style="font-size: 1.85rem;"><span
-                                            class="text-gradient">Award</span></span>
-                                    <span class="stat-label">Achievement Honor</span>
+                                            class="text-gradient">3 Awards</span></span>
+                                    <span class="stat-label">Completion, Progress, Merit</span>
                                 </div>
                             </div>
 
-                            <div style="margin-top: 1.75rem;">
-                                <a href="resume.html" class="btn-primary">
-                                    <span>View Certification on Resume</span>
+                            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                <button type="button" class="btn-primary"
+                                    data-cert-img="src/certificates/oxford_certificate_of_completion.jpg"
+                                    data-cert-title="Certificate of Completion — Engineering: Civil, Mechanical & Electrical"
+                                    data-cert-issuer="Oxford Royale Academy · Balliol College, University of Oxford"
+                                    data-cert-date="August 2026"
+                                    data-cert-pdf="docs/certificates/oxford_certificate_of_completion.pdf"
+                                    data-cert-notes="Officially certified completion of academic engineering requirements at Balliol College, University of Oxford, UK. Accredited by the British Council and the British Accreditation Council.">
+                                    <span>Inspect Completion Cert</span>
                                     <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round">
                                         <path d="M5 12h14"></path>
                                         <path d="m12 5 7 7-7 7"></path>
                                     </svg>
+                                </button>
+                                <button type="button" class="btn-secondary"
+                                    data-cert-img="src/certificates/oxford_academic_achievement_award.jpg"
+                                    data-cert-title="Academic Achievement Award"
+                                    data-cert-issuer="Oxford Royale Academy · University of Oxford"
+                                    data-cert-date="August 2026"
+                                    data-cert-pdf="docs/certificates/oxford_academic_achievement_award.pdf"
+                                    data-cert-notes="Proudly presented to Kayra Ecrin Küçük in recognition of the progress they have made during their academic course with Oxford Royale.">
+                                    <span>🏆 Achievement Award</span>
+                                </button>
+                                <button type="button" class="btn-secondary"
+                                    data-cert-img="src/certificates/oxford_student_report.jpg"
+                                    data-cert-title="Official Student Report & Faculty Evaluation — Grade A (84/100)"
+                                    data-cert-issuer="Oxford Royale · Teacher Mamoona Najeeb"
+                                    data-cert-date="August 2026"
+                                    data-cert-pdf="docs/certificates/oxford_student_report.pdf"
+                                    data-cert-notes="Comprehensive evaluation breakdown: Attendance 10/10, Written Assignment 23/25, In-Class Contribution 19/20, Progress 9/10, Overall Grade A (84/100). Instructor commendation on future engineering technologies paper.">
+                                    <span>📊 View Full Report</span>
+                                </button>
+                                <a href="resume.html#credentials" class="btn-secondary">
+                                    <span>View All Credentials</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Featured Highlight Project Hero Card 3: PASCH Goethe-Institut Germany Scholarship -->
+            <div class="reveal project-filter-item" data-category="arts" style="margin-top: 2rem;">
+                <article class="featured-project-card" style="margin-top: 0;">
+                    <div class="cta-glow-2"></div>
+                    <div class="featured-project-grid">
+                        <div class="featured-logo-box" style="background: linear-gradient(135deg, #f59e0b 0%, #ea580c 50%, #dc2626 100%);">
+                            🇩🇪
+                        </div>
+                        <div>
+                            <div style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                <span class="tag-badge" style="background: rgba(245, 158, 11, 0.12); border-color: rgba(245, 158, 11, 0.35); color: #fbbf24;">Featured · International Scholarship Award</span>
+                                <span class="tag-badge-muted">Goethe-Institut · Germany & Austria</span>
+                            </div>
+
+                            <h2 class="featured-project-title">
+                                <span>PASCH Literature Competition & Germany Study Scholarship</span>
+                                <span class="featured-link-sub">
+                                    <span>"Mein neues Leben" · 3-Week Immersion Course Grant</span>
+                                </span>
+                            </h2>
+
+                            <p class="hero-desc" style="margin-top: 0.75rem; max-width: 100%; font-size: 0.95rem;">
+                                Awarded 1st place in the competitive German reading and writing competition <em>"Mein neues Leben"</em> organized by the worldwide PASCH network (<em>Schulen: Partner der Zukunft</em>) and Goethe-Institut Ankara, in collaboration with Austrian author Urs Luger. Won a prestigious full academic scholarship (<em>Stipendium</em>) for an intensive 3-week youth language, cultural, and scientific immersion program in Germany (<em>3-wöchiger Jugendkurs in Deutschland</em>, Goslar).
+                            </p>
+
+                            <div class="featured-stats-row">
+                                <div class="stat-item">
+                                    <span class="stat-number" style="font-size: 1.85rem;"><span
+                                            class="text-gradient">1st Prize</span></span>
+                                    <span class="stat-label">Full Scholarship Award</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" style="font-size: 1.85rem;"><span
+                                            class="text-gradient">3 Weeks</span></span>
+                                    <span class="stat-label">Course in Germany</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number" style="font-size: 1.85rem;"><span
+                                            class="text-gradient">Trilingual</span></span>
+                                    <span class="stat-label">German, English, Turkish</span>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 1.5rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+                                <button type="button" class="btn-primary"
+                                    data-cert-img="src/certificates/pasch_urkunde_award.jpg"
+                                    data-cert-title="Urkunde — PASCH-Lese-Schreibwettbewerb 'Mein neues Leben'"
+                                    data-cert-issuer="Goethe-Institut Ankara & PASCH (Schulen: Partner der Zukunft) / Urs Luger"
+                                    data-cert-date="April 2024"
+                                    data-cert-pdf="docs/certificates/pasch_goethe_urkunde.pdf"
+                                    data-cert-notes="Offizielle Urkunde: Kayra Ecrin Küçük hat erfolgreich beim PASCH-Lese-Schreibwettbewerb 'Mein neues Leben' teilgenommen und ein Stipendium für einen 3-wöchigen Jugendkurs in Deutschland gewonnen. Unterzeichnet von Urs Luger (Freier Autor, Wien) und Andreas Volk (Goethe-Institut Ankara).">
+                                    <span>Inspect Official Urkunde</span>
+                                    <svg class="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M5 12h14"></path>
+                                        <path d="m12 5 7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                                <a href="docs/certificates/pasch_goethe_urkunde.pdf" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+                                    <span>View Official PDF</span>
+                                </a>
+                                <a href="resume.html#credentials" class="btn-secondary">
+                                    <span>Verified Credentials</span>
                                 </a>
                             </div>
                         </div>
@@ -471,6 +575,294 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Verified Academic Credentials & Official Certifications -->
+            <section id="credentials" class="section-divider section-pad project-filter-item" data-category="credentials" style="margin-top: 3.5rem;">
+                <div class="reveal">
+                    <span class="section-tag">Authentic Verification</span>
+                    <h2 class="section-heading">Verified Academic Credentials & Official Certifications</h2>
+                    <p style="color: var(--muted-foreground); margin-top: 0.5rem; max-width: 44rem; font-size: 0.95rem;">
+                        Official certificates, competitive scholarship awards, and academic evaluations. Click any credential to inspect the high-resolution certificate in the interactive lightbox or view the official PDF document.
+                    </p>
+                </div>
+
+                <div class="cert-grid">
+                    <!-- Cert 1: Oxford Certificate of Completion -->
+                    <div class="cert-card spotlight-card">
+                        <div class="cert-badge-row">
+                            <span class="cert-issuer-pill">Oxford Royale Academy</span>
+                            <span class="cert-verified-pill">✓ Verified Credential</span>
+                        </div>
+                        <div class="cert-thumb-container"
+                            data-cert-img="src/certificates/oxford_certificate_of_completion.jpg"
+                            data-cert-title="Certificate of Completion — Engineering: Civil, Mechanical & Electrical"
+                            data-cert-issuer="Oxford Royale Academy · Balliol College, University of Oxford"
+                            data-cert-date="August 2026"
+                            data-cert-pdf="docs/certificates/oxford_certificate_of_completion.pdf"
+                            data-cert-notes="Officially certified completion of academic engineering requirements at Balliol College, University of Oxford, UK. Accredited by the British Council and the British Accreditation Council.">
+                            <img src="src/certificates/oxford_certificate_of_completion.jpg" alt="Oxford Royale Certificate of Completion" class="cert-thumb-img" loading="lazy">
+                            <div class="cert-thumb-overlay">
+                                <span class="cert-overlay-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Inspect Certificate</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">Certificate of Completion</h3>
+                        <div class="cert-subtitle">Engineering: Civil, Mechanical & Electrical</div>
+                        <p class="cert-desc">
+                            Summer academic engineering programme operated by Oxford Royale Academy on the campus of <strong>Balliol College, University of Oxford</strong>. Covered core disciplines and engineering design challenges.
+                        </p>
+                        <div class="cert-meta-tags">
+                            <span class="tag-badge">Balliol College, Oxford</span>
+                            <span class="tag-badge-muted">British Council Accredited</span>
+                        </div>
+                        <div class="cert-actions-row">
+                            <button type="button" class="btn-cert-preview"
+                                data-cert-img="src/certificates/oxford_certificate_of_completion.jpg"
+                                data-cert-title="Certificate of Completion — Engineering: Civil, Mechanical & Electrical"
+                                data-cert-issuer="Oxford Royale Academy · Balliol College, University of Oxford"
+                                data-cert-date="August 2026"
+                                data-cert-pdf="docs/certificates/oxford_certificate_of_completion.pdf"
+                                data-cert-notes="Officially certified completion of academic engineering requirements at Balliol College, University of Oxford, UK. Accredited by the British Council and the British Accreditation Council.">
+                                <span>Preview</span>
+                            </button>
+                            <a href="docs/certificates/oxford_certificate_of_completion.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2: Oxford Academic Achievement Award -->
+                    <div class="cert-card spotlight-card">
+                        <div class="cert-badge-row">
+                            <span class="cert-issuer-pill">Oxford Royale Academy</span>
+                            <span class="cert-verified-pill">🏆 Progress Honor</span>
+                        </div>
+                        <div class="cert-thumb-container"
+                            data-cert-img="src/certificates/oxford_academic_achievement_award.jpg"
+                            data-cert-title="Academic Achievement Award"
+                            data-cert-issuer="Oxford Royale Academy · University of Oxford"
+                            data-cert-date="August 2026"
+                            data-cert-pdf="docs/certificates/oxford_academic_achievement_award.pdf"
+                            data-cert-notes="Proudly presented to Kayra Ecrin Küçük in recognition of the progress they have made during their academic course with Oxford Royale.">
+                            <img src="src/certificates/oxford_academic_achievement_award.jpg" alt="Academic Achievement Award" class="cert-thumb-img" loading="lazy">
+                            <div class="cert-thumb-overlay">
+                                <span class="cert-overlay-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Inspect Award</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">Academic Achievement Award</h3>
+                        <div class="cert-subtitle">Progress & Academic Excellence</div>
+                        <p class="cert-desc">
+                            Proudly presented to Kayra Ecrin Küçük in recognition of outstanding academic progress, critical analysis, and intellectual commitment during the engineering programme.
+                        </p>
+                        <div class="cert-meta-tags">
+                            <span class="tag-badge">Special Recognition</span>
+                            <span class="tag-badge-muted">Oxford Royale</span>
+                        </div>
+                        <div class="cert-actions-row">
+                            <button type="button" class="btn-cert-preview"
+                                data-cert-img="src/certificates/oxford_academic_achievement_award.jpg"
+                                data-cert-title="Academic Achievement Award"
+                                data-cert-issuer="Oxford Royale Academy · University of Oxford"
+                                data-cert-date="August 2026"
+                                data-cert-pdf="docs/certificates/oxford_academic_achievement_award.pdf"
+                                data-cert-notes="Proudly presented to Kayra Ecrin Küçük in recognition of the progress they have made during their academic course with Oxford Royale.">
+                                <span>Preview</span>
+                            </button>
+                            <a href="docs/certificates/oxford_academic_achievement_award.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3: Oxford Certificate of Recognition -->
+                    <div class="cert-card spotlight-card">
+                        <div class="cert-badge-row">
+                            <span class="cert-issuer-pill">Oxford Royale</span>
+                            <span class="cert-verified-pill">⭐ Engagement Merit</span>
+                        </div>
+                        <div class="cert-thumb-container"
+                            data-cert-img="src/certificates/oxford_certificate_of_recognition.jpg"
+                            data-cert-title="Certificate of Recognition"
+                            data-cert-issuer="Oxford Royale · University of Oxford"
+                            data-cert-date="August 2026"
+                            data-cert-pdf="docs/certificates/oxford_certificate_of_recognition.pdf"
+                            data-cert-notes="Proudly presented to Kayra Ecrin Küçük for excellent engagement and performance in lessons today.">
+                            <img src="src/certificates/oxford_certificate_of_recognition.jpg" alt="Certificate of Recognition" class="cert-thumb-img" loading="lazy">
+                            <div class="cert-thumb-overlay">
+                                <span class="cert-overlay-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Inspect Certificate</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">Certificate of Recognition</h3>
+                        <div class="cert-subtitle">Engagement & Lesson Performance</div>
+                        <p class="cert-desc">
+                            Awarded for distinguished participation, exemplary critical questioning, and classroom leadership in advanced engineering seminars.
+                        </p>
+                        <div class="cert-meta-tags">
+                            <span class="tag-badge">Lesson Engagement</span>
+                            <span class="tag-badge-muted">Classroom Merit</span>
+                        </div>
+                        <div class="cert-actions-row">
+                            <button type="button" class="btn-cert-preview"
+                                data-cert-img="src/certificates/oxford_certificate_of_recognition.jpg"
+                                data-cert-title="Certificate of Recognition"
+                                data-cert-issuer="Oxford Royale · University of Oxford"
+                                data-cert-date="August 2026"
+                                data-cert-pdf="docs/certificates/oxford_certificate_of_recognition.pdf"
+                                data-cert-notes="Proudly presented to Kayra Ecrin Küçük for excellent engagement and performance in lessons today.">
+                                <span>Preview</span>
+                            </button>
+                            <a href="docs/certificates/oxford_certificate_of_recognition.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 4: Oxford Student Report -->
+                    <div class="cert-card spotlight-card">
+                        <div class="cert-badge-row">
+                            <span class="cert-issuer-pill">Oxford Royale Academy</span>
+                            <span class="cert-verified-pill">Grade A · 84/100</span>
+                        </div>
+                        <div class="cert-thumb-container"
+                            data-cert-img="src/certificates/oxford_student_report.jpg"
+                            data-cert-title="Official Student Report & Faculty Evaluation — Grade A (84/100)"
+                            data-cert-issuer="Oxford Royale · Teacher Mamoona Najeeb"
+                            data-cert-date="August 2026"
+                            data-cert-pdf="docs/certificates/oxford_student_report.pdf"
+                            data-cert-notes="Comprehensive evaluation breakdown: Attendance & Punctuality 10/10, Written Assignment 23/25, In-Class Contribution 19/20, Progress 9/10, Overall Grade A (84/100). Instructor commendation: 'Kayra has been an exceptional student throughout these two weeks... excellent writing skills on future engineering technologies... confident delivery of her section of the group presentation.'">
+                            <img src="src/certificates/oxford_student_report.jpg" alt="Student Report Card" class="cert-thumb-img" loading="lazy">
+                            <div class="cert-thumb-overlay">
+                                <span class="cert-overlay-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Inspect Report Card</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">Faculty Report & Transcript</h3>
+                        <div class="cert-subtitle">Teacher: Mamoona Najeeb · Overall Grade A</div>
+                        <p class="cert-desc">
+                            Detailed academic evaluation highlighting 10/10 attendance, 23/25 written assignment, and commendation for investigative research on future engineering technologies.
+                        </p>
+                        <div class="cert-meta-tags">
+                            <span class="tag-badge">Score: 84 / 100</span>
+                            <span class="tag-badge-muted">Triple Discipline</span>
+                        </div>
+                        <div class="cert-actions-row">
+                            <button type="button" class="btn-cert-preview"
+                                data-cert-img="src/certificates/oxford_student_report.jpg"
+                                data-cert-title="Official Student Report & Faculty Evaluation — Grade A (84/100)"
+                                data-cert-issuer="Oxford Royale · Teacher Mamoona Najeeb"
+                                data-cert-date="August 2026"
+                                data-cert-pdf="docs/certificates/oxford_student_report.pdf"
+                                data-cert-notes="Comprehensive evaluation breakdown: Attendance 10/10, Written Assignment 23/25, In-Class Contribution 19/20, Progress 9/10, Overall Grade A (84/100). Instructor commendation: 'Kayra has been an exceptional student throughout these two weeks... excellent writing skills on future engineering technologies... confident delivery of her section of the group presentation.'">
+                                <span>Preview</span>
+                            </button>
+                            <a href="docs/certificates/oxford_student_report.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Cert 5: PASCH Goethe-Institut Urkunde -->
+                    <div class="cert-card spotlight-card">
+                        <div class="cert-badge-row">
+                            <span class="cert-issuer-pill">Goethe-Institut & PASCH</span>
+                            <span class="cert-verified-pill">🇩🇪 Full Scholarship</span>
+                        </div>
+                        <div class="cert-thumb-container"
+                            data-cert-img="src/certificates/pasch_urkunde_award.jpg"
+                            data-cert-title="Urkunde — PASCH-Lese-Schreibwettbewerb 'Mein neues Leben'"
+                            data-cert-issuer="Goethe-Institut Ankara & PASCH (Schulen: Partner der Zukunft) / Urs Luger"
+                            data-cert-date="April 2024"
+                            data-cert-pdf="docs/certificates/pasch_goethe_urkunde.pdf"
+                            data-cert-notes="Offizielle Urkunde: Kayra Ecrin Küçük hat erfolgreich beim PASCH-Lese-Schreibwettbewerb 'Mein neues Leben' teilgenommen und ein Stipendium für einen 3-wöchigen Jugendkurs in Deutschland gewonnen. Unterzeichnet von Urs Luger (Freier Autor, Wien) und Andreas Volk (Goethe-Institut Ankara).">
+                            <img src="src/certificates/pasch_urkunde_award.jpg" alt="PASCH Urkunde Award" class="cert-thumb-img" loading="lazy">
+                            <div class="cert-thumb-overlay">
+                                <span class="cert-overlay-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                        <line x1="11" y1="8" x2="11" y2="14"></line>
+                                        <line x1="8" y1="11" x2="14" y2="11"></line>
+                                    </svg>
+                                    <span>Inspect Urkunde</span>
+                                </span>
+                            </div>
+                        </div>
+                        <h3 class="cert-title">PASCH Urkunde & Stipendium</h3>
+                        <div class="cert-subtitle">Goethe-Institut · 3-Wöchiger Jugendkurs in Deutschland</div>
+                        <p class="cert-desc">
+                            1st Prize in the literary writing contest <em>"Mein neues Leben"</em>, earning a full competitive scholarship for a 3-week immersion course in Germany.
+                        </p>
+                        <div class="cert-meta-tags">
+                            <span class="tag-badge">Stipendium Winner</span>
+                            <span class="tag-badge-muted">Wien / Ankara / Deutschland</span>
+                        </div>
+                        <div class="cert-actions-row">
+                            <button type="button" class="btn-cert-preview"
+                                data-cert-img="src/certificates/pasch_urkunde_award.jpg"
+                                data-cert-title="Urkunde — PASCH-Lese-Schreibwettbewerb 'Mein neues Leben'"
+                                data-cert-issuer="Goethe-Institut Ankara & PASCH (Schulen: Partner der Zukunft) / Urs Luger"
+                                data-cert-date="April 2024"
+                                data-cert-pdf="docs/certificates/pasch_goethe_urkunde.pdf"
+                                data-cert-notes="Offizielle Urkunde: Kayra Ecrin Küçük hat erfolgreich beim PASCH-Lese-Schreibwettbewerb 'Mein neues Leben' teilgenommen und ein Stipendium für einen 3-wöchigen Jugendkurs in Deutschland gewonnen. Unterzeichnet von Urs Luger (Freier Autor, Wien) und Andreas Volk (Goethe-Institut Ankara).">
+                                <span>Preview</span>
+                            </button>
+                            <a href="docs/certificates/pasch_goethe_urkunde.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                    <polyline points="14 2 14 8 20 8"></polyline>
+                                </svg>
+                                <span>PDF</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             <!-- CTA Section -->
             <section id="contact" class="section-divider section-pad" style="margin-top: 3.5rem;">

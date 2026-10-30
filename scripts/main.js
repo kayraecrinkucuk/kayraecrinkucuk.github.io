@@ -202,4 +202,129 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // 10. Certificate Lightbox Modal Controller
+    let modalEl = document.getElementById('cert-modal');
+    if (!modalEl) {
+        // Dynamically create modal if not present
+        modalEl = document.createElement('div');
+        modalEl.id = 'cert-modal';
+        modalEl.className = 'cert-modal';
+        modalEl.setAttribute('role', 'dialog');
+        modalEl.setAttribute('aria-modal', 'true');
+        modalEl.setAttribute('aria-label', 'Certificate Viewer');
+        modalEl.innerHTML = `
+            <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+            <div class="cert-modal-dialog">
+                <div class="cert-modal-header">
+                    <div class="cert-modal-title-group">
+                        <h3 id="cert-modal-title">Certificate</h3>
+                        <p id="cert-modal-subtitle">Official Verification</p>
+                    </div>
+                    <button type="button" class="cert-modal-close-btn" id="cert-modal-close" aria-label="Close modal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+                <div class="cert-modal-body">
+                    <div class="cert-modal-img-wrap">
+                        <img id="cert-modal-img" src="" alt="Certificate Preview" class="cert-modal-img" loading="lazy">
+                    </div>
+                    <div class="cert-modal-notes" id="cert-modal-notes"></div>
+                </div>
+                <div class="cert-modal-footer">
+                    <span id="cert-modal-date" class="font-mono text-muted" style="font-size: 0.8125rem;"></span>
+                    <div style="display: flex; gap: 0.75rem; align-items: center;">
+                        <a id="cert-modal-pdf" href="#" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding: 0.5rem 1.15rem; font-size: 0.8125rem;">
+                            <span>Open Official PDF</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                        <button type="button" class="btn-secondary" id="cert-modal-dismiss" style="padding: 0.5rem 1rem; font-size: 0.8125rem;">
+                            Close
+                        </button>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modalEl);
+    }
+
+    const modalBackdrop = document.getElementById('cert-modal-backdrop');
+    const modalCloseBtn = document.getElementById('cert-modal-close');
+    const modalDismissBtn = document.getElementById('cert-modal-dismiss');
+    const modalImg = document.getElementById('cert-modal-img');
+    const modalTitle = document.getElementById('cert-modal-title');
+    const modalSubtitle = document.getElementById('cert-modal-subtitle');
+    const modalNotes = document.getElementById('cert-modal-notes');
+    const modalDate = document.getElementById('cert-modal-date');
+    const modalPdfLink = document.getElementById('cert-modal-pdf');
+
+    const openCertModal = (data) => {
+        if (!modalEl) return;
+        if (modalImg) {
+            modalImg.src = data.img || '';
+            modalImg.alt = data.title || 'Certificate';
+        }
+        if (modalTitle) modalTitle.textContent = data.title || 'Certificate';
+        if (modalSubtitle) modalSubtitle.textContent = data.issuer || 'Official Credential';
+        if (modalNotes) {
+            if (data.notes) {
+                modalNotes.innerHTML = data.notes;
+                modalNotes.style.display = 'block';
+            } else {
+                modalNotes.style.display = 'none';
+            }
+        }
+        if (modalDate) modalDate.textContent = data.date ? `Awarded / Session: ${data.date}` : '';
+        if (modalPdfLink) {
+            if (data.pdf) {
+                modalPdfLink.href = data.pdf;
+                modalPdfLink.style.display = 'inline-flex';
+            } else {
+                modalPdfLink.style.display = 'none';
+            }
+        }
+        modalEl.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    };
+
+    const closeCertModal = () => {
+        if (!modalEl) return;
+        modalEl.classList.remove('open');
+        document.body.style.overflow = '';
+    };
+
+    if (modalBackdrop) modalBackdrop.addEventListener('click', closeCertModal);
+    if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeCertModal);
+    if (modalDismissBtn) modalDismissBtn.addEventListener('click', closeCertModal);
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && modalEl && modalEl.classList.contains('open')) {
+            closeCertModal();
+        }
+    });
+
+    // Delegate click events for certificate previews
+    document.addEventListener('click', (e) => {
+        const trigger = e.target.closest('[data-cert-img]');
+        if (trigger) {
+            e.preventDefault();
+            const data = {
+                img: trigger.getAttribute('data-cert-img'),
+                title: trigger.getAttribute('data-cert-title') || 'Certificate of Achievement',
+                issuer: trigger.getAttribute('data-cert-issuer') || 'Accredited Institution',
+                notes: trigger.getAttribute('data-cert-notes') || '',
+                date: trigger.getAttribute('data-cert-date') || '',
+                pdf: trigger.getAttribute('data-cert-pdf') || ''
+            };
+            openCertModal(data);
+        }
+    });
 });
+
