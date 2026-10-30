@@ -18,7 +18,8 @@ IB Diploma candidate at **Bilkent Erzurum Laboratory School (BELS)** with experi
 
 ### Bilkent Erzurum Laboratory School (BELS)
 **IB Diploma Programme — Grade 12 (Official Predicted: 43 / 45)**  
-Türkiye · Expected Graduation: June 2027
+Türkiye · Expected Graduation: June 2027  
+*Official Certification Date: 28 October 2026 · Signed by High School Principal Dinçer Akış and IBDP Coordinator Selin Sethi (BELS / İhsan Doğramacı Foundation)*
 
 **Higher Level (All 7s — 21/21)**
 - Mathematics AA HL in English — **7**
@@ -48,6 +49,11 @@ Türkiye · Expected Graduation: June 2027
     - **Academic Achievement Award** (in recognition of progress made during the academic course)
     - **Certificate of Recognition** (for excellent engagement and performance in lessons)
     - **Faculty Student Report & Written Evaluation** (by Teacher Mamoona Najeeb): Commended for deep conceptual understanding of engineering disciplines, critical questioning, advanced research and writing on future engineering technologies, and confident delivery in the collaborative group engineering presentation.
+    - **Academic Research Paper:** *"Optimized Future of the Modern Engineering"* (Written Assignment Score: **23/25**, Word Count: **1,036 words**). Comprehensive technical analysis evaluating:
+      1. *Mechanical Engineering:* 4D Printed Shape-Shifting Materials, soft robotics, smart polymers/hydrogels, and self-expanding medical implants.
+      2. *Electrical Engineering:* Room-Temperature Superconductors, high-pressure hydrides via diamond anvil cells, power grid loss elimination, and maglev transportation.
+      3. *Civil Engineering:* Biomimetic Infrastructure and bacterial autonomous self-healing concrete.
+      - File: `docs/research/oxford_future_engineering_technologies_essay.pdf` (Preview: `src/research/oxford_future_engineering_essay_p1.jpg`)
 - **PASCH Goethe-Institut German Literature Competition & Scholarship Award (*Urkunde*):**
   - Organization: PASCH (*Schulen: Partner der Zukunft*) / Goethe-Institut Ankara & Austrian Author Urs Luger (Vienna / Ankara, April 2024)
   - Honor: First Prize / Scholarship Winner (*Stipendium*) for the reading and writing competition *"Mein neues Leben"*
@@ -65,7 +71,7 @@ Türkiye · Expected Graduation: June 2027
 
 ### Arts & Media
 - **LeoPard's Photography Studio:** Founder (@leop.ardsstudio). Established a digital photography studio bringing together amateur photographers internationally to celebrate and sell PhotoArt.
-- **Bilkent Erzurum Literature Festival Team:** Head Organizer & Costume Contest Judge (10th grade). Led the preparation process, presented the costume contest, and hosted the "Literature & Cinema Festival 2026".
+- **Bilkent Erzurum Literature Festival Team:** Head Organizer & Costume Contest Judge (10th grade). Led the preparation process, presented the costume contest, and hosted the "Literature & Cinema Festival 2026". *(Photo: src/kayra_literature_festival.jpg)*
 - **Theater & Drama (Class of 2027):** Assistant Student-Actress of the Director Teacher. Performed as "Kreon" in a 45-student stage production of Sophocles' Greek tragedy *Antigone* for an audience of nearly a thousand people.
 - **Republic Day Ball Waltz Performance Community:** Main Assistant of the Dance Teacher. Choreographed and danced in a 20-couple waltz performance at the school's Republic Day Ball.
 
@@ -86,7 +92,10 @@ Türkiye · Expected Graduation: June 2027
 - **Extended Essay in Physics in English** (Predicted Grade: B)
 
 ### Engineering Research Practicum
-- **Magnetic Braking Systems as a Future Innovation in Thermodynamics:** High school research conducted at Ataturk University Mechanical Engineering Department.
+- **Magnetic Braking Systems as a Future Innovation in Thermodynamics:** High school research conducted at Ataturk University Mechanical Engineering Department under Prof. Dr. Isak Kotcioglu.
+
+### Oxford Royale Engineering Research Paper
+- **Optimized Future of the Modern Engineering:** 1,036-word technical research paper exploring 4D Printed Shape-Shifting Materials, Room-Temperature Superconductors (diamond anvil cell synthesis & hydride physics), and Biomimetic Infrastructure (autonomous bacterial self-healing concrete). Written Assignment Grade: **23/25** at Balliol College, University of Oxford. (PDF: `docs/research/oxford_future_engineering_technologies_essay.pdf`).
 
 ---
 
